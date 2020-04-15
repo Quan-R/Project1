@@ -1,9 +1,13 @@
+body{
+  background: rgb(244, 251, 253);
+}
 .profile {
+  background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 450px;
   margin: auto;
   padding: 20px;
-  border-top: 2px solid rgb(0, 119, 255);
+  border-top: 2px solid rgba(0, 119, 255, 0.781);
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: grid;
