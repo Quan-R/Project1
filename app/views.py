@@ -61,6 +61,7 @@ def profile():
 
 @app.route('/profiles', methods=['GET','POST'])
 def profiles():
+    """view profiles"""
     profile_list=[]
     
     profiles= UserProfile.query.filter_by().all()
@@ -75,16 +76,13 @@ def profiles():
 
 ##############################################################################
     
-@app.route('/profile/<userid>', methods=['GET', 'POST'])
+@app.route('/profile/<userid>', methods=['GET'])
 def userprofile(userid):
-    json={}
+    """view individual profile"""
     user = UserProfile.query.filter_by(id=userid).first()
-    if request.method == 'POST':
-        json={'userid':user.id, 'username':user.username, 'profile_image':user.pic, 'gender':user.gender, 'age':user.age, 'created_on':user.created}
-        return jsonify(json)
 
-    elif request.method == 'GET' and user:
-        return render_template('individual.html', profile=user)
+    if request.method == 'GET' and user:
+        return render_template('indiprofile.html', profile=user)
 
     return render_template('profile.html')
 
