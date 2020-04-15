@@ -50,7 +50,7 @@ def profile():
                 filename = secure_filename(profilepic.filename)
                 profilepic.save(os.path.join(uploadfolder, filename))
                 
-            user = UserProfile( first_name=fname, last_name=lname, email= email, location=location, gender=sex, bio=biography, created = tcreated, pic=profilepic.filename)
+            user = UserProfile( first_name=fname, last_name=lname, email= email, location=location, gender=sex, bio=biography, created=tcreated, pic=filename)
             db.session.add(user)
             db.session.commit()
             flash('New user added successfully')

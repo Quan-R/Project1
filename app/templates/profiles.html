@@ -13,9 +13,9 @@
                 <div class="card">
                     <div class="image">
                         {% if profile.pic %}
-                            <img src="{{ url_for('static',filename='upload/+profile.pic')}}">
+                            <img src="{{ url_for('static',filename='uploads/'+profile.pic)}}">
                         {% else %}
-                            <img src="{{ url_for('static',filename='upload/default-profile.jpg') }}">
+                            <img src="{{ url_for('static',filename='uploads/'+default-profile.jpg) }}">
                         {% endif %}
                     </div>
 

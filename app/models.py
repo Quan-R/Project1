@@ -16,7 +16,7 @@ class UserProfile(db.Model):
     location = db.Column(db.String(80))
     gender = db.Column(db.String(80))
     bio = db.Column(db.String(80))
-    password = db.Column(db.String(255))
+    pic = db.Column(db.String(255))
 
     def __init__(self, first_name, last_name, email, location, gender, bio, created, pic):
         self.first_name = first_name
@@ -27,7 +27,7 @@ class UserProfile(db.Model):
         self.bio = bio
         self.created = created
         self.pic = pic
-        #self.password = generate_password_hash(password, method='pbkdf2:sha256')
+        
 
     def is_authenticated(self):
         return True
