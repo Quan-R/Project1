@@ -10,7 +10,7 @@
         <div class="title">
             <h1>Profiles</h1>
         </div>
-        
+
         {% for profile in profile %}
             <div class="profiles">
                 <div class="card">
@@ -25,8 +25,10 @@
                     <div class="content">
                         <h4>{{ profile.first_name }} {{ profile.last_name }}</h4>
                         <hr/>
-                        <p><bold>Gender:</bold> {{ profile.gender }}</p>
-                        <p><bold>Location:</bold> {{ profile.location }}</p>
+                        <p><i class="far fa-user-circle"></i>
+                            <bold>Gender:</bold> {{ profile.gender }}</p>
+                        <p><i class="fas fa-globe"></i>
+                            <bold>Location:</bold> {{ profile.location }}</p>
                     </div>
                 
                     <div class="view-button">

@@ -30,9 +30,6 @@ body {
     
 .image {
     grid-area: 1 / 1 / 2 / 2; 
-    margin: auto;
-    vertical-align: middle;
-    border-style: none;
 }
 img{
     border-radius: 50%;
@@ -41,6 +38,7 @@ img{
 }
 
 .content { 
+    color: rgb(180, 178, 178) ;
     vertical-align: middle;
     font-size: 15px;
     width:100%;
