@@ -5,9 +5,12 @@
 {% endblock%}
 
 {%block main %}
-
+    {% include 'flash_messages.html' %}
     <div class="container">
-        <h1>Profiles</h1>
+        <div class="title">
+            <h1>Profiles</h1>
+        </div>
+        
         {% for profile in profile %}
             <div class="profiles">
                 <div class="card">

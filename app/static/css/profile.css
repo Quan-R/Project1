@@ -20,6 +20,11 @@ body{
 .profile-image{
   grid-area: 1 / 1 / 2 / 2;
 }
+img{
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
 .top-profile{
   grid-area: 1 / 2 / 2 / 3;
   text-align: left;
