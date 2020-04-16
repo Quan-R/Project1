@@ -31,11 +31,13 @@ body {
 .image {
     grid-area: 1 / 1 / 2 / 2; 
     margin: auto;
-    height: 125px;
-    width: 125px;
-    border-radius: 50%;
     vertical-align: middle;
     border-style: none;
+}
+img{
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
 }
 
 .content { 
