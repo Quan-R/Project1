@@ -18,9 +18,10 @@
 
         <div class="top-profile">
             <h5><bold>{{ profile.first_name }} {{ profile.last_name }}</bold></h5>
-            <p>E-mail: {{ profile.email}}</p>
-            <p>Location:{{ profile.location }}</p>
-            <p>Joined On: {{ profile.created }}</p>
+            <hr>
+            <p><i class="fas fa-envelope"> {{ profile.email}}</i></p>
+            <p><i class="fas fa-globe">  {{ profile.location }}</i></p>
+            <p><i class="far fa-calendar-alt"> Joined on {{ profile.created }}</i></p>
         </div>
         <div class="bottom-profile">
             <h6><bold>About Me:</bold></h6>
